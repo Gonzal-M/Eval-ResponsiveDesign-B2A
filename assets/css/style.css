@@ -1,1 +1,244 @@
-/*css file*/
+/*fonts*/
+@font-face{
+    font-family: HKGrotesk;
+    src: url(../fonts/HKGrotesk-Regular.otf);
+}
+@font-face{
+    font-family: HKGrotesk;
+    src: url(../fonts/HKGrotesk-Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: LibreBaskerville;
+    src: url(../fonts/LibreBaskerville-Regular.ttf);
+}
+@font-face {
+    font-family: LibreBaskerville;
+    src: url(../fonts/LibreBaskerville-Italic.ttf);
+    font-style: italic;
+}
+
+
+
+/*others*/
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* --- header ---*/
+.header__up{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header__main{
+    font-family: HKGrotesk;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header__main a{
+    color : #003B5C;
+}
+.weather__section{
+    display: flex;
+}
+.nav__list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav__menu__item{
+    padding: 0px 10px;
+}
+.header__sections{
+    border-top: 1px solid #E3DACC;
+
+}
+
+/*burger menu*/
+.burger__menu{
+    display: none;
+}
+
+
+
+/* --- main --- */
+
+/*hero*/
+.hero__section{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+}
+.hero__content:first-of-type{
+    width : 55%;
+}
+.hero__content:last-of-type{
+    width : 40%;
+}
+.hero__content img{
+    width: 100%;
+}
+.hero__link a{
+    color:#F24922;
+    font-family: HKGrotesk;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+/* - categories - */
+
+/*titre*/
+.title__section{
+    display: flex;
+    justify-content: space-around;
+}
+.title__section h3{
+    letter-spacing: 1px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    font-family: HKGrotesk;
+    text-transform: uppercase;
+    border: 1px solid #E5DBD1;
+    box-shadow: 2px 2px #E5DBD1;
+    color : #003B5C;
+    padding: 2px 20px;
+}
+.double__line{
+    margin:auto;
+    width: 40%;
+    height: 2px;
+    border-top: 1px solid #E5DBD1;
+    border-bottom: 1px solid #E5DBD1;
+}
+
+/*menu list*/
+.nav__section__items{
+    padding: 0px 10px;
+}
+.nav__section__items a, li{
+    font-family: HKGrotesk;
+    font-size: 12px;
+    color: rgba(93, 83, 79, 0.6);
+    padding: 0px 10px;
+}
+.section__menu{
+    display: flex;
+    justify-content: center;
+}
+.readall__div a{
+    color:#F24922;
+    font-family: HKGrotesk;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+/*articles*/
+.articles{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+}
+.article__content{
+    width: 31%;
+}
+.article__content img{
+    width: 100%;
+}
+.article__link a{
+    color:#F24922;
+    font-family: HKGrotesk;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/*newsletter section*/
+.newsletter__section{
+    height: 456px;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.newsletter__text{
+    margin: auto;
+    vertical-align: middle; 
+    text-align: center;
+    position: absolute;
+    color: white;
+    font-family: LibreBaskerville;
+    width: 50%;
+}
+.newsletter__text h3{
+    font-size: 52px;
+}
+.newsletter__text span{
+    font-style: italic;
+}
+.newsletter__text p{
+    font-size: 22px;
+}
+.newsletter__button{
+    color: #003B5C;
+    background-color: white;
+    border: 1px solid #003B5C;
+    box-shadow: 4px 4px #F24922;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-family: HKGrotesk;
+}
+
+
+
+/* --- footer --- */
+.footer__main{
+    background-color: #E74832;
+    height: 390px; 
+    font-family: HKGrotesk;
+    color: white;
+
+}
+.footer__top{
+    justify-content: space-around;
+    display: flex;
+    height: 80%;
+
+    align-items:center;
+}
+.footer__top h6{
+    font-size: 22px;
+}
+.footer__top a{
+    color:white;
+    text-transform: uppercase;
+}
+.footer__list__button{
+    border: 1px solid white;
+    box-shadow: 3px 3px #E74832, 4px 4px white;
+    padding: 10px 40px;
+}
+.footer__bottom .double__line{
+    width: 98%;
+}
+.footer__bottom{
+    text-transform: uppercase;
+}
+
+.footer__bottom__text{
+    display:flex;
+    justify-content: space-between;
+}
+.footer__list__social a{
+    padding: 0px 2px; 
+}
+
