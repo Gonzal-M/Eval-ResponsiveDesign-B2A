@@ -34,7 +34,6 @@ a{
 /* --- header ---*/
 .header__up{
     display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 .header__main{
@@ -55,11 +54,14 @@ a{
     list-style: none;
 }
 .nav__menu__item{
-    padding: 0px 10px;
+    padding: 0px 20px;
+    letter-spacing: 0.3px;
 }
 .header__sections{
     border-top: 1px solid #E3DACC;
-
+}
+.header__sections .nav__list{
+    padding: 10px 0px;
 }
 
 /*burger menu*/
@@ -76,6 +78,10 @@ a{
     display: flex;
     width:100%;
     justify-content: space-around;
+    min-height: 900px;
+}
+.hero__content{
+    position: relative;
 }
 .hero__content:first-of-type{
     width : 55%;
@@ -91,6 +97,22 @@ a{
     font-family: HKGrotesk;
     text-transform: uppercase;
     font-size: 12px;
+}
+.hero__textblock{
+    background-color: white;
+    text-align: center;
+    position: absolute;  
+
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.first__hero .hero__textblock{
+    width: 65%; 
+    bottom: 12%; 
+}
+.sec__hero .hero__textblock{
+    width: 77%;
+    bottom: 23%;
 }
 
 
@@ -161,6 +183,36 @@ a{
     text-transform: uppercase;
     font-size: 12px;
 }
+
+/*texts*/
+.article__textblock h5, .hero__textblock h5{
+    color: rgb(93, 83, 79, 0.6);
+    font-family: HKGrotesk;
+}
+.article__textblock span, .hero__textblock span{
+    color: #003B5C;
+    text-transform: uppercase;
+    opacity: 100%;
+}
+.hero__textblock h3{
+    color: #003B5C;
+    font-family: LibreBaskerville;
+    font-size: 36px;
+}
+.article__textblock h3{
+    color: #003B5C;
+    font-family: LibreBaskerville;
+    font-size: 22px;
+}
+.article__textblock p, .hero__textblock p{
+    color: #5D534F;
+    font-family: LibreBaskerville;
+    font-size: 16px;
+}
+.articles{
+    padding-bottom: 80px;
+}
+
 
 /*newsletter section*/
 .newsletter__section{
@@ -237,8 +289,10 @@ a{
 .footer__bottom__text{
     display:flex;
     justify-content: space-between;
+    padding: 0px 20px;
 }
 .footer__list__social a{
     padding: 0px 2px; 
 }
+
 
