@@ -331,7 +331,6 @@ body{
     justify-content: space-around;
     display: flex;
     height: 80%;
-
     align-items:center;
 }
 .footer__top h6{
@@ -374,7 +373,7 @@ body{
 
 
 /*iPad*/
-@media(max-height: 1024px){  
+@media(min-height: 1024px){  
     .to__hide{
         display:none;
     }
@@ -405,6 +404,29 @@ body{
         height: 1px;
         border-bottom: 1px solid #E5DBD1;
         margin: 20px 0;
+    }
+
+    .footer__main{
+        height: 620px;
+    }
+    .footer__top{
+        display: block;
+        height: 85%;
+        align-items:center;
+        margin-bottom: 20px;
+    }
+    .footer__two{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footer__logo{
+        width: 100%;
+    }
+    .footer__logo img{
+        position: relative;
+        transform: translate(-50%, 0);
+        left: 50%;
+        margin-top: 10px;
     }
 }
 
