@@ -33,6 +33,25 @@ ul.nav__footer__list {
 body{
     margin: 0;
 }
+.menu__overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #ffffff85;
+    z-index: 999;
+    display: none;
+}
+.menu__overlay.active {
+    display: block;
+}
+.stop__scroll {
+    overflow: hidden;
+}
+.burger__menu__list{
+    display:none;
+}
 
 
 
@@ -73,7 +92,40 @@ body{
 
 /*burger menu*/
 .burger__menu{
-    display: none;
+    display:none;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    justify-content: space-between; 
+}
+.burger__menu .line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    transition: 0.3s all;
+}
+.burger__menu .line:first-of-type {
+    top: 0%;
+}
+.burger__menu .line:last-of-type {
+    bottom: 0%;
+}
+.burger__menu .line:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.burger__menu.active .line:first-of-type {
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+}
+.burger__menu.active .line:last-of-type {
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
+}
+.burger__menu.active .line:nth-of-type(2) {
+    opacity: 0;
 }
 
 
@@ -109,17 +161,15 @@ body{
     background-color: white;
     text-align: center;
     position: absolute;  
-
+    bottom: 23%;
     left: 50%;
     transform: translate(-50%, 0);
 }
 .first__hero .hero__textblock{
-    width: 65%; 
-    bottom: 12%; 
+    width: 65%;  
 }
 .sec__hero .hero__textblock{
-    width: 77%;
-    bottom: 23%;
+    width: 77%;   
 }
 
 
@@ -256,6 +306,16 @@ body{
     text-transform: uppercase;
     font-family: HKGrotesk;
 }
+.newsletter__button:hover{
+    background-color: #F24922;
+    position: relative;
+    top: 5px;
+    left : 5px;
+    box-shadow: none;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
 
 
 
@@ -286,6 +346,16 @@ body{
     box-shadow: 3px 3px #E74832, 4px 4px white;
     padding: 10px 40px;
 }
+.footer__list__button:hover{
+    background-color: white;
+    position: relative;
+    top: 4px;
+    left : 4px;
+    box-shadow: none;
+    border: none;
+    color: #E74832;
+    transition: 0.6s;
+}
 .footer__bottom .double__line{
     width: 98%;
 }
@@ -300,6 +370,42 @@ body{
 }
 .footer__list__social a{
     padding: 0px 2px; 
+}
+
+
+/*iPad*/
+@media(max-height: 1024px){  
+    .to__hide{
+        display:none;
+    }
+    .burger__menu{
+        display: block;
+        z-index: 1001;
+    }
+    .burger__menu__list.active{
+        display:block;
+        width:50%;
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        z-index: 1000;
+        right: 0;
+        top: 0;
+        padding-top: 60px;
+    }
+    .burger__menu__list.active a{
+        font-size: 20px;
+        letter-spacing: 2px;;
+    }
+    .burger__menu__list.active li{
+        margin: 10px;
+    }
+    .burger__menu__list.active .seperation__line{
+        width: 95%;
+        height: 1px;
+        border-bottom: 1px solid #E5DBD1;
+        margin: 20px 0;
+    }
 }
 
 
